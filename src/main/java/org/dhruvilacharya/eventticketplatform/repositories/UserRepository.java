@@ -1,6 +1,6 @@
 package org.dhruvilacharya.eventticketplatform.repositories;
 
-import org.dhruvilacharya.eventticketplatform.domain.User;
+import org.dhruvilacharya.eventticketplatform.domain.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

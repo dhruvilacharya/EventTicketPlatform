@@ -1,4 +1,4 @@
-package org.dhruvilacharya.eventticketplatform.domain;
+package org.dhruvilacharya.eventticketplatform.domain.entities;
 
 import jakarta.persistence.*;
 import lombok.*;

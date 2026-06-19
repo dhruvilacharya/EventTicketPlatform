@@ -1,0 +1,25 @@
+package org.dhruvilacharya.eventticketplatform.domain;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.dhruvilacharya.eventticketplatform.domain.entities.EventStatusEnum;
+import org.dhruvilacharya.eventticketplatform.domain.entities.User;
+
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class CreateEventRequest {
+    private String name;
+    private LocalDateTime start;
+    private LocalDateTime end;
+    private String venue;
+    private LocalDateTime salesStart;
+    private LocalDateTime salesEnd;
+    private EventStatusEnum status;
+    private List<CreateTicketTypeRequest> ticketTypes = new ArrayList<>();
+}
